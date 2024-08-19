@@ -11,4 +11,4 @@
    @yield('content')
     
 </body>
-</html>
+</html>gi
