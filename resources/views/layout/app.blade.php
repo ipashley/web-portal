@@ -9,6 +9,7 @@
 </head>
 <body>
    @yield('content')
+   @yield('landing_page')
  
     
 </body>

@@ -47,3 +47,8 @@ Route::get('/', function () {
  Route::get('/aboutus',function (){
     return view('pages.aboutus');
  });
+
+
+Route::get('/', function () {
+    return view('pages.landing_page');
+});
