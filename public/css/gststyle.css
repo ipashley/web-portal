@@ -57,3 +57,81 @@
     height:200px; 
     
   }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+.form{
+   /* background-color:  #99730a;  */
+    width: 400px;
+    height:390px;
+    border: 1px solid black;
+    display: block;  
+    position: relative;
+    top:50px;
+    left: 400px; 
+}
+.field{
+  color: white;
+  position: absolute;
+  align-items: center;
+  left: 130px;
+}
+#fname{
+  position: relative;
+    top: 80px;
+  right: 75px;
+  
+}
+  #passwd{
+    position: relative;
+    top: 100px;
+    right:12px;
+  } 
+  .former{
+    border:1px solid blue;
+    width: 99%;
+    height: 500px;
+    text-align: center;
+    background-color: gray;
+  }
+  .add{
+    border: 1px solid white;
+    width:400px ;
+    height:390px ;
+    margin-left:10px;
+    position: relative;
+    bottom:1px;
+
+    display: block;
+    background-color: rgb(63, 170, 170);
+  }
+  .fields{
+    position:relative;
+    top: 70px;
+  }
+  .table{
+    border: 1px solid black;
+    width:720px ;
+    height: 390px;
+    position: absolute;
+    top:47px;
+    left:500px; 
+    background-color: rgb(63, 170, 170);
+  }
+  .remember{
+    position: relative;
+    top: 290px;
+    
+  }
