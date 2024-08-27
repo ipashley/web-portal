@@ -8,13 +8,13 @@
            </div>
        <div class="right1"> 
           
-           <img src="image/image2.jpeg"></img>
+           <img src="image/image2.jpeg" class="img2"/>
        </div>
     </div>
     <div class="container1" style="margin-top: 10px;">
         <div class="left1"> 
            
-            <img src="image/image2.jpeg"></img>
+            <img src="image/image2.jpeg" class="img2" />
         </div>
         <div class="right1">
             <h2 id="about"></h2><b>About Us</b></h2>
@@ -29,7 +29,7 @@
             </div>
         <div class="left1"> 
            
-            <img src="image/image2.jpeg" style="  background-repeat: no-repeat; background-size: cover;height:300px; border-radius: 30px;"></img>
+            <img src="image/image2.jpeg" class="img2" />
         </div>
      </div>
     
