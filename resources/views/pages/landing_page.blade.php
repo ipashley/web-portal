@@ -24,34 +24,34 @@
                         <div2 class="slideshow-container">
 
 <div class="mySlides fade">
-    <img src="img/image 1.jpeg">
+    <img src="img/image 1.jpeg" class="img">
     <div class="text">Tanzania Yanadi Fursa za Madini Mkakati Korea Kusini na Asia.</div>
   </div>
 
   <div class="mySlides fade">
-    <img src="img/image 2.jpeg">
+    <img src="img/image 2.jpeg" class="img">
     <div class="text">Watumishi GST Wapatiwa Semina ya Maadili, Rushwa na Magonjwa 27 Juni 2024</div>
 
   </div>
 
   <div  class="mySlides fade">
-    <img src="img/image 3.jpeg">
+    <img src="img/image 3.jpeg" class="img">
     <div class="text">GST inaendelea kutoa elimu kwa wadau mbalimbali wa madini kwenye Wiki ya Maonesho ya Madini inayoendelea katika Viwanja vya Jakaya Kikwete, leo tarehe 22 Juni 2024, Dodoma.</div>
   </div >
   <div class="mySlides fade">
-    <img src="img/image 4.jpeg">
+    <img src="img/image 4.jpeg" class="img">
     <div class="text">Maadhimisho ya Siku ya Wafanyakazi Duniani Mei Mosi 2024</div>
   </div>
   <div class="mySlides fade">
-    <img src="img/image 5.jpeg">
+    <img src="img/image 5.jpeg" class="img">
     <div class="text">GST kujenga Maabara ya Kisasa jijini Dodoma, Kufanya Utafiti wa kina kufikia 50%. Waziri Mhe. Mavunde ameyasema hayo leo Aprili 24, 2024 jijini Dodoma katika kikao cha kujadili namna bora ya utendaji kazi kilichowakutanisha Watumishi wote wa GST.</div>
   </div>
   <div class="mySlides fade">
-    <img src="img/image 6.jpeg">
+    <img src="img/image 6.jpeg" class="img">
     <div class="text">Waziri wa Madini Mhe.Anthony Mavunde amewataka Watumishi wa Taasisi ya Jiolojia na Utafiti wa Madini Tanzania (GST) kuchapa kazi kwa bidii ili kutimiza Vision 2030, GST Kujenga maabara ya Kisasa Jijini Dodoma.</div>
   </div>
   <div class="mySlides fade">
-    <img src="img/image 7.jpeg">
+    <img src="img/image 7.jpeg" class="img">
     <div class="text">Wekeza Kwa Wanawake Kuharakisha Maendeleo Ya Taifa na Ustawi wa Jamii</div>
   </div>
                         </div2>
