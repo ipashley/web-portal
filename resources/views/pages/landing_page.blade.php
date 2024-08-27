@@ -13,15 +13,15 @@
 
                     </ul>
                     <div>
-                        <div1>
+                <div1>
                     <ul2>
                         <li2><a href="#gst library">GST LIBRARY</a></li2>
                         <li2><a href="#catalogue">CATALOGUE</a></li2>
                        <li2><a href="#search">SEARCH</a></li2>
                        <li2><a href="#link">LINK</a></li2>
                     </ul2>
-                        </div1>
-                        <div2 class="slideshow-container">
+               </div1>
+            <div2 class="slideshow-container">
 
 <div class="mySlides fade">
     <img src="img/image 1.jpeg">
