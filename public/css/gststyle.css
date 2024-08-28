@@ -20,11 +20,10 @@
   a:link{
     text-decoration: none;
     display: inline;
-    padding-right:20px ;
     position: relative;
     top: 7px;
-    left: 50px;
-    justify-content: space-between;
+    left: 5px;
+    
   }
   a:visited{
     text-decoration: none;
@@ -57,7 +56,7 @@
     height:200px; 
     
   }
-  table {
+  .members {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -121,17 +120,21 @@
     position:relative;
     top: 70px;
   }
-  .table{
-    border: 1px solid black;
-    width:720px ;
-    height: 390px;
-    position: absolute;
-    top:47px;
-    left:500px; 
-    background-color: rgb(63, 170, 170);
+  .tables{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 700px;
+    position: relative;
+    bottom: 400px;
+    left: 500px;
   }
   .remember{
     position: relative;
     top: 290px;
     
   }
+  #text{
+    text-align: center;
+    color:  #99730a;;
+  }
+  

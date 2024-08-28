@@ -3,6 +3,12 @@
  
 
 <div class="former">
+
+  @if(session('success'))
+       <div class="alert alert-success">
+         {{ session('success') }}
+      </div>
+  @endif
     @if ($errors->any())
         <div class="alert alert-danger">
             There is problem in your input
@@ -29,15 +35,34 @@
             <button type="submit" style="position:relative;top:50px; left:20px;background-color: #99730a;  color:white;">Add</button>
          </form>
 </div>
-<div class="table">
+<table class="tables">
+
+  <tr>
+    <th style="width:5%">S/N</th>
+    <th>Name of Staff</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+     <th>Position</th>
+     <th>Action</th>
+  </tr>
+  @foreach($staffs as $value)
+  <tr>
+    <td>{{ $loop->index + 1  }}</td>
+    <td>{{ $value->sname  }}</td>
+    <td>{{ $value->Email  }}</td>
+    <td>{{ $value->Phone  }}</td>
+    <td>{{ $value->Position  }}</td>
+    <td>
+    <a href="{{ route('pages.destroy', $value->id) }}" style="">Delete</a>
+    </td>
+  </tr>
+  @endforeach
 
 
-</div>
-<button  type="submit" style="position:relative; top:450px; left:20px; background-color: #99730a; color:white;">Delete</button>
-<button type="submit" style="position:relative; top:450px; left:40px; background-color: #99730a;  color:white;">Update</button>
-<button type="submit" style="position:relative; top:450px; left:60px; background-color: #99730a;  color:white;">View</button>
+</table>
 
-
+                 
+    
 
 </div>
 

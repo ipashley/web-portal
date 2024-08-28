@@ -62,8 +62,9 @@ Route::get('/login',function (){
    return view('pages.login');
 });
 Route::get('/myAdmin',function (){
-   return view('pages.myAdmin');
+   $allStaffs = staff::all();
+   return view('pages.myAdmin',['staffs' => $allStaffs]);
 })->name('pages.myAdmin');
-// Route::resource('pages', 'app/Http/controller/staffController');
 Route::post('/register', [staffController::class, 'store'])->name('pages.store');
-// Route::get('/admin', [staffController::class, 'myAdmin'])->name('pages.myAdmin');
+Route::get('/pages/{id}', [staffController::class, 'update'])->name('pages.update');
+Route::get('/pages/{id}', [staffController::class, 'destroy'])->name('pages.destroy'); 

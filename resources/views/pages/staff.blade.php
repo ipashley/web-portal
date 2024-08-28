@@ -2,7 +2,7 @@
 @section('content')
 
 <h1 id="text">GST STAFF MEMBERS</h1>
-<img src="/gst_logo.png" alt="gst_logo" style="width:60px; height:60px; position:relative; top:20px; left:900px;">
+<img src="/gst_logo.png" alt="gst_logo" style="width:60px; height:60px; position:relative; bottom:20px; left:950px;">
 
 <table class="members">
 
