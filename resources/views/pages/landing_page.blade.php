@@ -6,7 +6,7 @@
 
                     <ul>
                         <li><a href="home">HOME</a></li>
-                        <li><a href="about us">ABOUT US</a></li>
+                        <li><a href="/aboutus">ABOUT US</a></li>
                         <li><a href="library">LIBRARY</a></li>
                         <li><a href="library">STAFF</a></li>
                         <li><a href="gst website">GST WEBSITE</a></li>
@@ -55,7 +55,7 @@
     <div class="text">Wekeza Kwa Wanawake Kuharakisha Maendeleo Ya Taifa na Ustawi wa Jamii</div>
   </div>
                         </div2>
-                       
+
 
                     </div>
                     <div>
