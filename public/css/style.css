@@ -1,4 +1,4 @@
-ul{
+/* ul{
     list-style-type: none;
     overflow: hidden;
     border: 1px solid blue;
@@ -6,6 +6,7 @@ ul{
     margin: 0px;
     padding-left: 100px;
    }
+   
    li{
        float: left;
    }
@@ -31,6 +32,7 @@ h1 {
     margin-left: 400px;
     color:  rgb(194, 166, 9);
 }
+
 h2 {
  font-size: 25px;
  padding-left: 0px;
@@ -38,7 +40,7 @@ h2 {
  color:  rgb(194, 166, 9);
 }
 
-ul2 {
+.ul2 {
     list-style-type: none;
     margin: 0;
     padding-left: 10px;
@@ -46,7 +48,7 @@ ul2 {
 
   }
 
-  li2 a {
+  .ul2 a {
     display: block;
     color:white;
     padding: 18px 16px;
@@ -76,17 +78,18 @@ ul2 {
     color: white;
     background-color: rgb(199, 186, 2) ;
    }
+
  div{
     width: 100%;
     display: flex;
  }
 
-div2{
-margin-left: 150px;
-width: 50%;
-text-align: center;
-margin-top: 30px;
-padding-right: 50px;
+.div2{
+    margin-left: 150px;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 50px;
 }
 
 img{
@@ -293,7 +296,7 @@ header{
       bottom: 0px; */
         
 
-
+/* 
     .container1{
         display: flex;
         justify-content: space-between;
@@ -333,7 +336,7 @@ header{
   #content{
     font-size: 22px;
     
-  }
+  } */
 
 /* .left2{
 background-color: #008CBA;
@@ -353,7 +356,8 @@ margin: 20px;
 background-color: aliceblue;
 
 } */
-img{
+
+/* img{
   
     width:100%;
     background-repeat: no-repeat;
@@ -365,5 +369,5 @@ img{
 
   .container-main{
     flex-flow: column nowrap;
-  }
-   
+  
+    */ 

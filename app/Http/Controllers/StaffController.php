@@ -10,6 +10,7 @@ class StaffController extends Controller
 {
     public function index(){
         $products = Staff::all();
+
         return view('staff', ['members' => $products]);
     }
 
@@ -18,12 +19,14 @@ class StaffController extends Controller
     }
 
     public function store(Request $request){
+
         
         $data = $request->validate([
             'name' => 'required',
             'email' => 'required',
             'phone' => 'required | numeric',
-        ]);
+        ]); 
+
 
         $newStaff = Staff::create($data);
 

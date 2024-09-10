@@ -4,9 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\LoginnController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
 Route::get('/names', [StaffController::class, 'index'])->name('staff');
@@ -20,14 +17,15 @@ Route::post('/names', [StaffController::class, 'store'])->name('store');
 
 
 
+
+
+
+
+
+
+
+
 Route::get('/names/{editstaff}/edit', [StaffController::class, 'edit'])->name('edit');
-
-
-
-
-
-
-
 
 Route::get('/view',[LoginnController::class, 'index'])->name('look');
 
@@ -41,13 +39,14 @@ Route::post('/view',[LoginnController::class, 'stored'])->name('stored');
 Route::get('/', function () {
     return view('auth.registration');
 });
- Route::get('/dashboard',function (){
+
+Route::get('/dashboard',function (){
     return view('pages.dashboard');
  });
- Route::get('/aboutus',function (){
-    return view('pages.aboutus');
- });
 
+Route::get('/aboutus',function (){
+    return view('pages.aboutus');
+ })->name('about');
 
 Route::get('/', function () {
     return view('pages.landing_page');

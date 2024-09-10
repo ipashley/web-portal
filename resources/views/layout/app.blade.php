@@ -11,6 +11,5 @@
    @yield('content')
    @yield('landing_page')
  
-    
 </body>
 </html>

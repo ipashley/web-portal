@@ -31,8 +31,7 @@ class LoginnController extends Controller
         $newLoginn = Loginn::create($data);
 
         return redirect(route('look'));
-
-
+        
     }
 
 }
