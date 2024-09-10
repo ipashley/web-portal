@@ -2,40 +2,83 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\staff;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Staff;
+
 
 class StaffController extends Controller
 {
-    public function index(){
-        $products = Staff::all();
-
-        return view('staff', ['members' => $products]);
+    /**
+     * Display a listing of the resource.
+     */
+    public function login()
+    {
+        $pages = staff::latest()->paginate(5);
+        return view('pages.login',compact('pages'))
+              ->with('i',(request()->input('page', 1) -1) * 5);
     }
 
-    public function update(){
-        return view('update');
+
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function myAdmin()
+    {
+        return staff::all();
     }
 
-    public function store(Request $request){
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+            $request->validate([
+                'sname'=> 'required',
+                'Email' => 'required',
+                'Phone' => 'required',
+                'Position' => 'required',
+            ]);
 
-        
-        $data = $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-            'phone' => 'required | numeric',
-        ]); 
+            staff::create($request->all());
+            $allStaff = staff::all();
+           return view('pages.staff')->with('staff', $allStaff);
 
-
-        $newStaff = Staff::create($data);
-
-        return redirect(route('staff'));
     }
 
-    public function edit(Staff $editstaff){
+    /**
+     * Display the specified resource.
+     */
+    public function show(staff $staff)
+    {
+        //
+    }
 
-        return view('details', ['editstaff' => $editstaff]);
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(staff $staff)
+    {
+        //
+    }
 
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, staff $staff)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(staff $staff)
+    {
+        $staff->delete();
+
+        return redirect()->route('pages.myAdmin')
+         ->with('success', 'member deleted sucessful');
     }
 }
