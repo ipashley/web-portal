@@ -1,4 +1,4 @@
-ul{
+/* ul{
   list-style-type: none;
   overflow: hidden;
   border: 1px solid blue;
@@ -95,13 +95,13 @@ padding-right: 50px;
   
   padding-right: 80px;
 
-}
+} */
 
 
 
 
 
-
+/* 
 .slideshow-container {
 width: 60%;
 position:relative;
@@ -194,9 +194,9 @@ position:relative;
 
 .container2{
  padding: 60px;
-}
+} */
 
-
+/* 
 
 header{
   text-align: center;
@@ -269,11 +269,11 @@ header{
       margin-bottom: 10px;
     }
 
-  body{
+  /* body{
       display: flex;
    
-  }
-  .sidebar{
+  } */
+  /* .sidebar{
       top:0;
       bottom:0;
       left:0;
@@ -341,4 +341,4 @@ header{
   .column6{
       color: rgb(76, 180, 38)(68, 255, 0);
       margin: 10px;
-  }
+  } */ 
