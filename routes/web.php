@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\Controller;
-use App\Models\staff;
+use App\Models\staffs;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StaffController;
+use App\Http\Controllers\StaffsController;
 use App\Http\Controllers\LoginnController;
 
 Route::get('/', function () {
@@ -11,13 +11,13 @@ Route::get('/', function () {
 });
 
 
-Route::get('/names', [StaffController::class, 'index'])->name('staff');
+Route::get('/names', [StaffsController::class, 'index'])->name('staff');
 
-Route::get('names/update', [StaffController::class, 'update'])->name('update');
+Route::get('names/update', [StaffsController::class, 'update'])->name('update');
 
-Route::post('/names', [StaffController::class, 'store'])->name('store');
+Route::post('/names', [StaffsController::class, 'store'])->name('store');
 
-Route::get('/names/{editstaff}/edit', [StaffController::class, 'edit'])->name('edit');
+Route::get('/names/{editstaff}/edit', [StaffsController::class, 'edit'])->name('edit');
 Route::get('/view',[LoginnController::class, 'index'])->name('look');
 
 Route::get('/view/login',[LoginnController::class, 'view'])->name('view');
@@ -53,7 +53,7 @@ Route::get('/', function () {
 
 
  Route::get('/staff', function (){
-   $allStaffs = staff::all();
+   $allStaffs = staffs::all();
    //  Pass the data to the view
    return view('pages.staff', ['staffs' => $allStaffs]);
 })->name('pages.staff');
@@ -62,9 +62,9 @@ Route::get('/login',function (){
    return view('pages.login');
 });
 Route::get('/myAdmin',function (){
-   $allStaffs = staff::all();
+   $allStaffs = staffs::all();
    return view('pages.myAdmin',['staffs' => $allStaffs]);
 })->name('pages.myAdmin');
-Route::post('/register', [staffController::class, 'store'])->name('pages.store');
-Route::get('/pages/{id}', [staffController::class, 'update'])->name('pages.update');
-Route::get('/pages/{id}', [staffController::class, 'destroy'])->name('pages.destroy'); 
+Route::post('/register', [staffsController::class, 'store'])->name('pages.store');
+Route::get('/pages/{id}', [staffsController::class, 'update'])->name('pages.update');
+Route::get('/pages/{id}', [staffsController::class, 'destroy'])->name('pages.destroy'); 

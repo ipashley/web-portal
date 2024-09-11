@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\staff;
+use App\Models\staffs;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class staffController extends Controller
+class staffsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function login()
     {
-        $pages = staff::latest()->paginate(5);
+        $pages = staffs::latest()->paginate(5);
         return view('pages.login',compact('pages'))
               ->with('i',(request()->input('page', 1) -1) * 5);
     }
@@ -25,7 +25,7 @@ class staffController extends Controller
      */
     public function myAdmin()
     {
-        return staff::all();
+        return staffs::all();
     }
 
     /**
@@ -40,8 +40,8 @@ class staffController extends Controller
                 'Position' => 'required',
             ]);
 
-            staff::create($request->all());
-            $allStaff = staff::all();
+            staffs::create($request->all());
+            $allStaff = staffs::all();
            return view('pages.staff')->with('staff', $allStaff);
 
     }
@@ -49,7 +49,7 @@ class staffController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(staff $staff)
+    public function show(staffs $staff)
     {
         //
     }
@@ -57,7 +57,7 @@ class staffController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(staff $staff)
+    public function edit(staffs $staff)
     {
         echo'';
     }
@@ -65,7 +65,7 @@ class staffController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, staff $staff)
+    public function update(Request $request, staffs $staff)
     {
         $request->validate([
 
@@ -77,7 +77,7 @@ class staffController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(staff $id)
+    public function destroy(staffs $id)
     {
         
         $id->delete($id);
