@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 
-class StaffController extends Controller
+class StaffsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -68,15 +68,20 @@ class StaffController extends Controller
      */
     public function update(Request $request, staff $staff)
     {
-        //
+        $request->validate([
+
+        ]);
+        $staff->update($request->all());
+
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(staff $staff)
+    public function destroy(staff $id)
     {
-        $staff->delete();
+        
+        $id->delete($id);
 
         return redirect()->route('pages.myAdmin')
          ->with('success', 'member deleted sucessful');

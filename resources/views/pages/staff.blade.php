@@ -1,16 +1,16 @@
 @extends('layout.app')
 @section('content')
 
-<table>
-<img src="/gst_logo.png" alt="gstlogo" style="width:72px; height:60px; position:absolute; top:1.5px; left:1080px;">
+<h1 id="text">GST STAFF MEMBERS</h1>
+<img src="/gst_logo.png" alt="gst_logo" style="width:60px; height:60px; position:relative; bottom:20px; left:950px;">
 
-<h1 style="text-align:center; color:goldenrod;">GST STAFF MEMBERS</h1>
+<table class="members">
 
-@if(session('success'))
-  <div class="alert alert-success">
-    {{ session('success') }}
-  </div>
-@endif
+  @if(session('success'))
+       <div class="alert alert-success">
+         {{ session('success') }}
+      </div>
+  @endif
   <tr>
     <th style="width:5%">S/N</th>
     <th>Name of Staff</th>

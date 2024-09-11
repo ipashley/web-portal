@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StaffController;
+use App\Http\Controllers\StaffsController;
 use App\Http\Controllers\LoginnController;
 use App\Http\Controllers\Controller;
 use App\Models\staff;
@@ -22,7 +22,7 @@ Route::get('/aboutus',function (){
  })->name('about');
 
 
-Route::get('/', function () {
+Route::get('/landing_page', function () {
     return view('pages.landing_page');
 });
 
@@ -49,9 +49,10 @@ Route::get('/login',function (){
 });
 
 Route::get('/myAdmin',function (){
-   return view('pages.myAdmin');
+   $allStaffs = staff::all();
+   return view('pages.myAdmin',['staffs' => $allStaffs]);
 })->name('pages.myAdmin');
 
-// Route::resource('pages', 'app/Http/controller/staffController');
-Route::post('/register', [staffController::class, 'store'])->name('pages.store');
-// Route::get('/admin', [staffController::class, 'myAdmin'])->name('pages.myAdmin');
+// Route::resource('pages', 'app/Http/controller/staffsController');
+Route::post('/register', [staffsController::class, 'store'])->name('pages.store');
+// Route::get('/admin', [staffsController::class, 'myAdmin'])->name('pages.myAdmin');

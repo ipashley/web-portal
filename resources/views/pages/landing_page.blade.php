@@ -28,12 +28,12 @@
                         <div class="slideshow-container">
 
 <div class="mySlides fade">
-    <img src="img/image 1.jpeg">
+    <img src="img/image 1.jpeg" alt="image 1">
     <div class="text">Tanzania Yanadi Fursa za Madini Mkakati Korea Kusini na Asia.</div>
-  </div>
+  </div> 
 
+    <img src="img/image 2.jpeg" alt="image 1" class="responsive" width="900" height="250">
   <div class="mySlides fade">
-    <img src="img/image 2.jpeg">
     <div class="text">Watumishi GST Wapatiwa Semina ya Maadili, Rushwa na Magonjwa 27 Juni 2024</div>
 
   </div>
@@ -59,7 +59,7 @@
     <div class="text">Wekeza Kwa Wanawake Kuharakisha Maendeleo Ya Taifa na Ustawi wa Jamii</div>
   </div>
                         </div2>
-                       
+
 
                     </div>
                     <div>
