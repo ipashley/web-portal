@@ -6,22 +6,26 @@
 
                     <ul>
                         <li><a href="home">HOME</a></li>
-                        <li><a href="/aboutus">ABOUT US</a></li>
+                        <li><a href="{{route('about')}}">ABOUT US</a></li>
                         <li><a href="library">LIBRARY</a></li>
                         <li><a href="library">STAFF</a></li>
-                        <li><a href="gst website">GST WEBSITE</a></li>
+                        <li><a href="https://www.gst.go.tz">GST WEBSITE</a></li>
+
+                        <!-- <input type="search" name="" id="">
+                        <input type="button" value="search"> -->
+                      
 
                     </ul>
                     <div>
-                <div1>
-                    <ul2>
-                        <li2><a href="#gst library">GST LIBRARY</a></li2>
-                        <li2><a href="#catalogue">CATALOGUE</a></li2>
-                       <li2><a href="#search">SEARCH</a></li2>
-                       <li2><a href="#link">LINK</a></li2>
-                    </ul2>
-               </div1>
-            <div2 class="slideshow-container">
+                        <div class="div1" >
+                    <ul class="ul2">
+                        <li><a href="#gst library">GST LIBRARY</a></li>
+                        <li><a href="#catalogue">CATALOGUE</a></li>
+                       <li><a href="#search">SEARCH</a></li>
+                       <li><a href="#link">LINK</a></li>
+                    </ul>
+                        </div>
+                        <div class="slideshow-container">
 
 <div class="mySlides fade">
     <img src="img/image 1.jpeg" alt="image 1">

@@ -1,5 +1,5 @@
 @extends('layout.app')
- @section('content')
+ @section('registration')
  <body>
 
 <header>
