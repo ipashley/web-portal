@@ -59,7 +59,7 @@ class staffController extends Controller
      */
     public function edit(staff $staff)
     {
-        //
+        echo'';
     }
 
     /**
