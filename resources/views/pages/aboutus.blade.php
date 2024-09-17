@@ -2,14 +2,14 @@
  @section('content')
  <body>
 
-    <h1> GST LIBRARY WEB PORTAL</h1>
+    <h1 style="text-align:center;"> GST LIBRARY WEB PORTAL</h1>
 
-    <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/aboutus">ABOUT US</a></li>
-        <li><a href="library">LIBRARY</a></li>
-        <li><a href="library">STAFF</a></li>
-        <li><a href="gst website">GST WEBSITE</a></li>
+    <ul class="navigation">
+        <li class="ul1"><a href="{{route('landing_page')}}">HOME</a></li>
+        <li class="ul1"><a href="/aboutus">ABOUT US</a></li>
+        <li class="ul1"><a href="library">LIBRARY</a></li>
+        <li class="ul1"><a href="{{route('pages.staff')}}">STAFF</a></li>
+        <li class="ul1"><a href="gst website">GST WEBSITE</a></li>
 
     </ul>
 
@@ -29,17 +29,17 @@
                   in 1929 to support the geological mapping and mineral exploration.</p>
         </div>
         <div class="image">
-            <img src="image/museum.png"  class="rounded-corners"/>
+            <img src="image/museum.png" alt="museum" class="rounded-corners">
             
         </div>
     </div>
 
         <div class="container2">
-            <div class="image" >
-                <img src="image/kageramap.jpeg"  class="rounded-corners"/>
+            <div class="content" >
+                <img src="image/kageramap.jpeg" alt="kageramap" class="rounded-corners">
             </div>
 
-            <div class="content">
+            <div class="image">
                 <p>
                     Since its establishment, the Survey has undergone various re-organizational administrative changes under different 
                     Ministries including Ministry of Mines and Commerce (1935 to 1949), Ministry of Commerce and Industry (1960 to 1961),
@@ -64,7 +64,7 @@
             </div>
 
             <div class="image">
-                <img src="image/map.png"  class="rounded-corners"/>
+                <img src="image/map.png" alt="map" class="rounded-corners"/>
             </div>
         </div>
         

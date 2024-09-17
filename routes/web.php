@@ -8,14 +8,8 @@ use App\Http\Controllers\LoginnController;
 
 
 
-Route::get('/', function () {
-    return view('auth.registration');
-});
- Route::get('/dashboard',function (){
-    return view('pages.dashboard');
- });
 
-
+ 
 Route::get('/aboutus',function (){
     return view('pages.aboutus');
  })->name('about');
@@ -23,19 +17,8 @@ Route::get('/aboutus',function (){
 
 Route::get('/landing_page', function () {
     return view('pages.landing_page');
-});
-
+})->name('landing_page');
  
-Route::get('/dashboard',function (){
-    return view('pages.dashboard');
- });
-
- 
-Route::get('/landing',function (){
-    return view('pages.landing');
- });
-
-
  Route::get('/staff', function (){
    $allStaffs = staffs::all();
    //  Pass the data to the view
