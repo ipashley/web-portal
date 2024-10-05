@@ -29,4 +29,4 @@ Route::get('/myAdmin',function (){
 })->name('pages.myAdmin');
 // Route::resource('pages', 'app/Http/controller/staffController');
 Route::post('/register', [staffController::class, 'store'])->name('pages.store');
-// Route::get('/admin', [staffController::class, 'myAdmin'])->name('pages.myAdmin');
+Route::post('/login', 'AuthController@login');
